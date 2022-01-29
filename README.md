@@ -1,108 +1,262 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Lulu Loves Logo](/assets/images/lulu-loves-logo.png)
 
-Welcome USER_NAME,
+# Recipely
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[View the live project here](https://jade-quinn.github.io/lulu-loves/)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+Inspired by modern nutritionist values, Recipely aims to be a resource for meals made with simple ingredients that are easy to prepare and big on flavor. Recipely is sure to be the key ingredient to change your approach to the kitchen!
 
-## Gitpod Reminders
+## Table of Contents:
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+- [The Strategy Plane](#the-strategy-plane)
+- [The Scope Plane](#the-scope-plane)
+- [The Structure Plane](#the-structure-plane)
+- [The Skeleton Plane](#the-skeleton-plane)
+- [The Surface Plane](#the-surface-plane)
+- [Technologies Used](#technologies-used)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Credits](#credits)
 
-`python3 -m http.server`
+## UX
 
-A blue button should appear to click: _Make Public_,
+### The Strategy Plane
 
-Another blue button should appear to click: _Open Browser_.
+**Why are we so special?**
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Recipely is designed with anyone who lives a fast paced life in mind. The site promotes fuss-free, flavour-packed meals by allowing users to search or share recipes in categories suxh as One Pot, Under 30 minutes or Minimal Ingredients.
 
-A blue button should appear to click: _Make Public_,
+**What are the tech and design considerations?**
 
-Another blue button should appear to click: _Open Browser_.
+Users are likely to view recipes while cooking or in the grocery store which suggests it will be accessed primary on mobile, with this in mind, there should be a mobile first approach to design and functionality. The target user is short on time so navigation should be intuitive and layout should quickly and clearly communicate recipie steps and ingredients.
+This product is for general consumers. As this is a B2C product, it should focus heavily on branding and emotive product images.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+**Project roadmap**
 
-To log into the Heroku toolbelt CLI:
+To determine the business objectives and user needs for this release I have created the table below. 
+Each opportunity/problem is rated on a scale of 1 - 5 in two dimensions; Importance and Feasibility.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+Opportunity/Problem | Importance | Feasibility
+------------ | ------------- | -------------
+Create form(s) to allow users to add new recipes to the site, edit them and delete them | 4 | 3
+Include fields such as ingredients, preparation steps, required tools, cuisine, etc | 5 | 5
+Allow users to search recipes in specific categories | 1 | 1
+Include a section to recomend cook books | 5 | 5
+Increase social media followers | 1 | 2
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+![Lulu Loves Project Roadmap](./documentation/project-roadmap.jpg)
 
-------
+#### User Stories
 
-## Release History
+**Goals of first time visitors and returning visitors**
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- As a first time user, I want to browse through recipes for inspiration on what to cook.
+- As a first time user, I want to search by category.
+- As a first time user, I want to quickly read through a list of ingredients.
+- As a returning user, I want to quickly find a recipie I have used before.
+- As a returning user, I want to login in as a user to the site to add my own recipie.
+- As a returning user, I want to update/delete a recipe I have added.
+- As a returning user, I want to know that my changes have been saved successfully.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+**Goals of site owner**
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- As a site owner, I want to build a community around simple, nutritious meals.
+- As a site owner, I want to recommend cook books.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+#### User persona of primary visitor
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![Lulu Loves User Persona](./documentation/lulu-loves-user-persona.jpg)
+![Lulu Loves User Goals and Frustrations](./documentation/lulu-loves-user-persona-goals-and-frustrations.jpg)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### The Scope Plane
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+#### Feature Scope
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+To establish the feature scope for this project I am using the agile methodology, I have made a list of all possible features and given each one a difficulty rating between 1 and 3.
+Each release will allow for a maximum of 12 points. The table below will be used to determine which features to prioritise and which to schedule for a later release.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+Feature | Rating
+------------ | -------------
+Announcement bar at the top of the home page to highlight relevant information e.g. newsletter promotion | 1
+Logo that links to the home page so users can orientate themselves easily | 1
+Clear, consistent navigation on each page | 1
+Showcase products or imporant site content with a sliding banner | 2
+Highlight aspects of the brand that are important to the user (e.g cruelty-free products, customer service) using short messages and icons | 1
+Self Care Club blog, featuring articles on products as well as general tips relating to self care | 1
+Online shop that will give users the option to set up an account or check out as guest and pay securely using Paypal, Stripe or Apple Pay | 3
+Related products section for upselling and cross selling | 3
+Calculated shipping | 3
+Advertise gift box product release | 1
+Newsletter sign-up | 2
+Footer which includes links to social media accounts | 1
+Contact form | 1
+Custom mouse icon | 1
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+Given limited resources, the features that offer the most value at this stage are:
+- Logo that links to the home page
+- Clear, consistent navigation on each page
+- Showcase products with a sliding banner
+- Highlight aspects of the brand that are important to the user
+- Advertise gift box product release
+- Self Care Club blog
+- Newsletter sign-up
+- Footer
+- Contact form
+- Custom mouse icon
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+These features solve the problem of generating interest and anticipation around the shop launch and beginning the process of establising the brand with potential customers.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### The Structure Plane
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+As the site will not have a lot of content to begin with a linear narrative will work best
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+![Lulu Loves Information Architecture](./documentation/lulu-loves-information-architecture.png)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### The Skeleton Plane
 
-------
+The wireframes were created using Balsamiq. They can be viewed at the following links
 
-## FAQ about the uptime script
+[Homepage](https://github.com/Jade-Quinn/lulu-loves/blob/master/documentation/home-page-wire-frame.png)
 
-**Why have you added this script?**
+### The Surface Plane
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+**Colour Scheme**
 
-**How will this affect me?**
+The main colours used are lilac #c7aacd, yellow #f5e336, blue #a7c6ea and orange #ef7a4e
+The colour pallet is bright and playful but used sparingly across the site to keep it looking clean.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+**Typography**
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+The font used on the site is Poppins with Sans Serif as the fallback font in case Poppins doesnt load.
+It is a clean and bold font but it is also slightly informal and fun to tie in with the overall brand aesthetic.
 
-**So….?**
+**Imagery**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+Imagery is bright and striking. It is a combination of custom made graphics and people enjoying the brands products.
+A custom mouse and hover icon offers an element of surprise.
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## Features
+ 
+### Existing Features
+
+- Announcement bar - highlight to users relevant information e.g. newsletter promotion or sale. This appears on the homepage only so as not to annoy the user with repetitive information.
+- Image carousel - communicates to the user what the site is about
+- Logo link to home page - allows users to orientate themselves quickly
+- Linear navigation - allows users to easily navigate all pages
+- Product page - showcase to the user products on offer
+- Custom compnay value icons - highlight to users the values of the brand (e.g cruelty-free products)
+- Self Care Club blog - encourages users to return to the site
+- Advertise gift box product release - generate anticipation with site users
+- Newsletter sign-up - encourages users to return to the site
+- Custom icons and cursor - to surprise users and make the site more memorable
+- Social icons in footer - allows users to further engage witht he brand and builds trust
+- Contact form - allows users to easily get in contact by filling out the form
+
+### Features Left to Implement
+- In the future the site will implement a shop to allow users to purchase products
+
+## Technologies Used
+
+### Languages Used
+
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+
+### Frameworks, Libraries & Programs Used
+
+1. [Bootstrap 5:](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+    - Bootstrap was used to assist with the responsiveness and styling of the website.
+1. [Google Fonts:](https://fonts.google.com/)
+    - Google fonts were used to import the 'Poppins' font into the style.css.
+1. [jQuery:](https://jquery.com/)
+    - jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
+1. [Git](https://git-scm.com/)
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+1. [GitHub:](https://github.com/)
+    - GitHub is used to store the projects code after being pushed from Git.
+1. [Illustrator:](https://www.adobe.com/ie/products/illustrator.html)
+    - Illustrator was used to create the logo and branding assets.
+1. [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
+    - Photoshop was used to create supporting documents, and to resize images for the site.
+1. [Balsamiq:](https://balsamiq.com/)
+    - Balsamiq was used to create the wireframes at the 'Skelton Plane phase.
+
+
+## Testing
+
+- The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors.
+- I used lighthouse in chrome developer tools to test perfromance and accessability. Screen shots of testing can be found in the testing folder within documentation
+
+Sadly I ran out of time to properly document my tests in this readme
+
+## Deployment
+
+### GitHub Pages
+
+The project was deployed to GitHub Pages using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
+
+### Forking the GitHub Repository
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
 
 ```
-pkill uptime.sh
-rm .vscode/uptime.sh
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 ```
 
-**Anything more?**
+7. Press Enter. Your local clone will be created.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```
 
----
+Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
-Happy coding!
+## Credits
+
+### Content
+- The method for creating the project road map in README.md came from Code Institute's lesson: 'It's All About The User Experience > The Strategy Plane > Strategy Trade-offs'
+- Research for content and layout of the user persona in README.md came from Pinterest. Refrences can be found [here](https://pin.it/5B3Gjdc)
+- The method for creating the feature scope table in README.md came from Code Institute's lesson: 'It's All About The User Experience > The Scope Plane > Scope Challenge'
+- I have documented all code used in my html and css files
+
+### Media
+- The photos in the user persona in README.md are from Pexels.com [Photo of girl 1](https://www.pexels.com/photo/photo-of-girl-smiling-while-holding-black-smartphone-4145034/) [Photo of girl 2](https://www.pexels.com/photo/fashion-man-people-woman-4144974/)
+- Banner photos used on the site are from Pexels.com
+- Articles from blog are from headspace.com 
+
+### Acknowledgements
+
+- My mentor Aaron Sinnott, for helpful guidance.
+
+- I received inspiration for this project from my sister Sadie, who gave me great insights when developing the user persona for the Lulu Loves brand. 
+Sadie also chose the name and did some initial logo sketches which I later developed into the Lulu Loves mascot, Sunny.
+
+![Sadies original logo sketch](./documentation/sadie-sketch.jpg)
