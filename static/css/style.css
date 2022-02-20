@@ -1,0 +1,38 @@
+/* ---------------------------- CORE STYLES */
+
+:root {
+    --primary-color: #0e2527;
+    --secondary-color: #f2faf1;
+    --tertiary-color: #707070;
+    --fourth-color: #000000;
+    --fifth-color: rgb(79, 56, 82);
+    --sixth-color: rgb(247, 223, 87);
+    --seventh-color: rgb(170, 210, 239);
+}
+
+html {
+    font-family: 'Rubik', sans-serif;
+    color: var(--fourth-color);
+    background-color: var(--secondary-color);
+}
+
+nav {
+    background-color: var(--secondary-color);
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.nav-extended {
+    padding: 15px 50px 0px 50px;
+}
+
+nav ul a, nav .brand-logo {
+    color: var(--fourth-color);
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
