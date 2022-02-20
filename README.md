@@ -11,7 +11,6 @@ Inspired by modern nutritionist values, Recipely aims to be a resource for meals
 - [The Strategy Plane](#the-strategy-plane)
 - [The Scope Plane](#the-scope-plane)
 - [The Structure Plane](#the-structure-plane)
-- [The Skeleton Plane](#the-skeleton-plane)
 - [The Surface Plane](#the-surface-plane)
 - [Technologies Used](#technologies-used)
 - [Testing](#testing)
@@ -50,10 +49,9 @@ Increase social media followers | 1 | 5
 **Goals of first time visitors and returning visitors**
 
 - As a first time user, I want to sign up and browse through recipes for inspiration on what to cook.
-- As a first time user, I want to search by category.
-- As a first time user, I want to quickly read through a list of ingredients.
-- As a returning user, I want to quickly find a recipie I have used before.
-- As a returning user, I want to login in as a user to the site to add my own recipie.
+- As a first time user, I want to log in and log out.
+- As a returning user, I want to login to my existing profile.
+- As a returning user, I want to add my own recipie.
 - As a returning user, I want to update/delete a recipe I have added.
 - As a returning user, I want to know that my changes have been saved successfully.
 
@@ -88,18 +86,14 @@ Given limited resources, the features that offer the most value at this stage ar
 
 As the site will not have a lot of content to begin with a linear narrative will work best
 
-### The Skeleton Plane
-
-The wireframes were created using Balsamiq. They can be viewed at the following links
-
-[Homepage](https://github.com/Jade-Quinn/lulu-loves/blob/master/documentation/home-page-wire-frame.png)
-
 ### The Surface Plane
 
 **Colour Scheme**
 
-The main colours used are lilac #c7aacd, yellow #f5e336, blue #a7c6ea and orange #ef7a4e
-The colour pallet is bright and playful but used sparingly across the site to keep it looking clean.
+The main colours used are black, white aswel as
+- teal #009688
+- pale green #f2faf1
+
 
 
 **Typography**
@@ -116,21 +110,20 @@ Imagery is bright and inviting.
  
 ### Existing Features
 
-- Announcement bar - highlight to users relevant information e.g. newsletter promotion or sale. This appears on the homepage only so as not to annoy the user with repetitive information.
-- Image carousel - communicates to the user what the site is about
+- Banner image - communicates to the user what the site is about
 - Logo link to home page - allows users to orientate themselves quickly
 - Linear navigation - allows users to easily navigate all pages
-- Product page - showcase to the user products on offer
-- Custom compnay value icons - highlight to users the values of the brand (e.g cruelty-free products)
-- Self Care Club blog - encourages users to return to the site
-- Advertise gift box product release - generate anticipation with site users
 - Newsletter sign-up - encourages users to return to the site
-- Custom icons and cursor - to surprise users and make the site more memorable
+- Icons - to add further meaning to sections
 - Social icons in footer - allows users to further engage witht he brand and builds trust
-- Contact form - allows users to easily get in contact by filling out the form
+- CRUD functionaity - allows users to login / register for an account, add/edit/delete their own recipes, view other users recipies
+
 
 ### Features Left to Implement
-- In the future the site will implement a shop to allow users to purchase products
+- Displaying further details for each recipie
+- Allowing admin to promote items on the site
+- Functionality to contact other members
+- Pagination
 
 ## Technologies Used
 
@@ -138,9 +131,8 @@ Imagery is bright and inviting.
 
 - HTML5, CSS3, JavaScript, Python
 
-### Planning site
+### Responsive check
 
-- [Balsamiq](https://balsamiq.com/) was used to create Wireframes.
 - [Responsive Design Checker](https://responsivedesignchecker.com/) was used to check the site design and responsiveness on different devices.
 
 ### Libraries
@@ -200,54 +192,25 @@ Create
 - Flash message confimrs recipe has been added
 
 Read
-Navigate to all recipies
+ - Navigate to all recipies
+ - Recipie displays name and category
 
-Scroll down to where that recipe is and click on Cook
-Does the Recipe page render correctly?
-Does the image uploaded as url render correctly?
-Click on the Share button underneath the Created By, does the modal with social networks pop up?
-Cancel out of the modal, does it work?
-Editing a Recipe (applicable to a Session User)
-[U in CRUD (Updating)]
+Update
+- Navigate to all recipies
+- Choose a recipe that was created by Session User
+- Click on the Edit button
+- Recipe can be edited
+- Success message is displayed
 
-Method 1:
-Go to the Recipes section
-Choose a recipe that was created by Session User
-Click on the Edit button
-Does the Edit Recipe form renders correctly?
-Change anything about the recipe and click on save
-Does the information entered updates correctly on the Recipe card?
-Method 2
-Go to Session User Profile section
-Scroll down to the second accordion
-Open recipe for editing
-Click "Cook"
-You are now in the Recipe page, scroll down to the buttons
-Click on Edit button
-Enter details
-Click Save
-Deleting a Recipe (applicable to a Session User)
-[D in CRUD (Deleting)]
+Delete
+- Navigate to all recipies
+- Choose a recipe that was created by Session User
+- Click on the delete button
+- Recipe can be deleated
 
-Method 1:
-Go to the Recipes section
-Choose a recipe that was created by Session User
-Click on the Delete button
-Does the modal pop up to ask if you are sure?
-Click on Cancel button to exit the process
-Click on Delete button to proceed with deletion
-Method 2
-Go to Session User Profile section
-Scroll down to the second accordion
-Open recipe for editing
-Click "Cook"
-You are now in the Recipe page, scroll down to the buttons
-Click on the Delete button
-Does the modal pop up to ask if you are sure?
-Click on Cancel button to exit the process
-Click on Delete button to proceed with deletion
-- I used lighthouse in chrome developer tools to test perfromance and accessability. Screen shots of testing can be found in the testing folder within documentation
-
+###Lighthouse report
+![Report](static/images/testing/Screenshot 2022-02-20 at 11.33.17.png)
+- I used lighthouse in chrome developer tools to test perfromance and accessability. Full report can be found here in the images folder > testing folder
 
 ## Deployment
 
