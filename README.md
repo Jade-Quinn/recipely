@@ -1,4 +1,4 @@
-- [Responsive view](/static/images/responsive.jpg)
+![Responsive demo](/static/images/responsive.jpg)
 
 # Recipely
 
@@ -149,7 +149,7 @@ Imagery is bright and inviting.
 
 - [FontAwesome 5.15.4](https://fontawesome.com/) is used for social links and the rating stars.
 
-- [Google Fonts](https://fonts.google.com/) is used for most fonts on the site.
+- [Google Fonts](https://fonts.google.com/) is used for teh font on the site.
 
 - [jQuery](https://jquery.com/) to easily manipulate the DOM and update Materialize tools that require initialization.
 
@@ -172,10 +172,82 @@ Imagery is bright and inviting.
 
 ## Testing
 
-- The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors.
+### Feature testing
+
+Log in
+
+- If Registered, click on the Login button on the navbar
+- Shows login form?
+- Form is validated
+- Display correct profile after login
+
+Sign up
+- Click on Register link in the navbar
+- Shows register form
+- Fill out all details
+- Click on the Register button
+- Brings user to profile page
+- Flash message confirms registration succeeded
+- Form validated
+
+###CRUD Testing
+
+Create
+
+- Click on the Add Recipe shows input form
+- Empty form displays error
+- Excepts validated form
+- Flash message confimrs recipe has been added
+
+Read
+Navigate to all recipies
+
+Scroll down to where that recipe is and click on Cook
+Does the Recipe page render correctly?
+Does the image uploaded as url render correctly?
+Click on the Share button underneath the Created By, does the modal with social networks pop up?
+Cancel out of the modal, does it work?
+Editing a Recipe (applicable to a Session User)
+[U in CRUD (Updating)]
+
+Method 1:
+Go to the Recipes section
+Choose a recipe that was created by Session User
+Click on the Edit button
+Does the Edit Recipe form renders correctly?
+Change anything about the recipe and click on save
+Does the information entered updates correctly on the Recipe card?
+Method 2
+Go to Session User Profile section
+Scroll down to the second accordion
+Open recipe for editing
+Click "Cook"
+You are now in the Recipe page, scroll down to the buttons
+Click on Edit button
+Enter details
+Click Save
+Deleting a Recipe (applicable to a Session User)
+[D in CRUD (Deleting)]
+
+Method 1:
+Go to the Recipes section
+Choose a recipe that was created by Session User
+Click on the Delete button
+Does the modal pop up to ask if you are sure?
+Click on Cancel button to exit the process
+Click on Delete button to proceed with deletion
+Method 2
+Go to Session User Profile section
+Scroll down to the second accordion
+Open recipe for editing
+Click "Cook"
+You are now in the Recipe page, scroll down to the buttons
+Click on the Delete button
+Does the modal pop up to ask if you are sure?
+Click on Cancel button to exit the process
+Click on Delete button to proceed with deletion
 - I used lighthouse in chrome developer tools to test perfromance and accessability. Screen shots of testing can be found in the testing folder within documentation
 
-Sadly I ran out of time to properly document my tests in this readme
 
 ## Deployment
 
@@ -272,12 +344,6 @@ To deploy this project on the Heroku cloud platform:
         python3 app.py
 
 ## Credits
-
-### Content
-- The method for creating the project road map in README.md came from Code Institute's lesson: 'It's All About The User Experience > The Strategy Plane > Strategy Trade-offs'
-- Research for content and layout of the user persona in README.md came from Pinterest. Refrences can be found [here](https://pin.it/5B3Gjdc)
-- The method for creating the feature scope table in README.md came from Code Institute's lesson: 'It's All About The User Experience > The Scope Plane > Scope Challenge'
-- I have documented all code used in my html and css files
 
 ### Media
 - The photos on the homepage are from Pexels.com

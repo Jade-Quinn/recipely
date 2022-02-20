@@ -11,6 +11,7 @@
 }
 
 html {
+    border: 10px solid red;
     font-family: 'Rubik', sans-serif;
     color: var(--fourth-color);
     background-color: var(--secondary-color);
