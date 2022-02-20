@@ -159,29 +159,50 @@ A custom mouse and hover icon offers an element of surprise.
 
 ## Technologies Used
 
-### Languages Used
+### Languages
 
--   [HTML5](https://en.wikipedia.org/wiki/HTML5)
--   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
++ HTML5, CSS3, JavaScript, Python
 
-### Frameworks, Libraries & Programs Used
+### Planning site
 
-1. [Bootstrap 5:](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
-    - Bootstrap was used to assist with the responsiveness and styling of the website.
-1. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Poppins' font into the style.css.
-1. [jQuery:](https://jquery.com/)
-    - jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
-1. [Git](https://git-scm.com/)
-    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-1. [GitHub:](https://github.com/)
-    - GitHub is used to store the projects code after being pushed from Git.
-1. [Illustrator:](https://www.adobe.com/ie/products/illustrator.html)
-    - Illustrator was used to create the logo and branding assets.
-1. [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
-    - Photoshop was used to create supporting documents, and to resize images for the site.
-1. [Balsamiq:](https://balsamiq.com/)
-    - Balsamiq was used to create the wireframes at the 'Skelton Plane phase.
++ [Balsamiq](https://balsamiq.com/) was used to create Wireframes.
++ [Responsive Design Checker](https://responsivedesignchecker.com/) was used to check the site design and responsiveness on different devices.
+
+### Libraries
+
++ [Materialize CSS and JavaScript](https://materializecss.com/getting-started.html) is used for the frontend framework to build the site's base template. Materialize JS and CSS tools were applied to speed up development. Most icons on the site are Materialize icons. I used the [Parallax template](https://materializecss.com/templates/parallax-template/preview.html)
+
++ [FontAwesome 5.15.4](https://fontawesome.com/) is used for social links and the rating stars.
+
++ [Google Fonts](https://fonts.google.com/) is used for most fonts on the site.
+
++ [Splide](https://splidejs.com/) CSS and JavaScript CDNs are used to easily add a custom slider.
+
++ [jQuery](https://jquery.com/) to easily manipulate the DOM and update Materialize tools that require initialization.
+
++ [Regex](https://docs.python.org/3/howto/regex.html) is used with Python to set required form field conditions.
+
++ [Werkzeug](https://werkzeug.palletsprojects.com/en/2.0.x/#) is used to securely store passwords, salt the passwords in MongoDB, and authenticate users.
+
++ [PyMongo](https://pymongo.readthedocs.io/en/stable/) is used to connect/communicated between Python and MongoDB.
+
++ [Flask](https://flask.palletsprojects.com/en/2.0.x/) is used to reduce development time when building a site with Python by constructing and rending pages.
+
++ [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) template language is used with Flask to create custom templates and easily pull content from MongoDB using Python.
+
+### JavaScript tools 
+
++ [EmailJS](https://www.emailjs.com/) is used to accept contact form enquires. 
+
++ [Sweet Alert](https://sweetalert.js.org/) is used to notify the user that the form has been submitted or that there's a submission error.
+
+### Deploying project 
+
++ [Git](https://git-scm.com/) is used to track changes made to the repository and for version control.
++ [GitHub](https://github.com/) is used to store the project and to share the project.
++ [GitPod](https://www.gitpod.io/) is used with the CI base template as an IDE (integrated development environment) to develop, commit, and push files to GitHub.
++ [MongoDB](https://www.mongodb.com/) is the noSQL database I used to store, manipulate, and retrieve data.
++ [Heroku](https://www.heroku.com/) is used to connect with my GitHub repository, manage the project, and deploy the live application.
 
 
 ## Testing
@@ -193,51 +214,104 @@ Sadly I ran out of time to properly document my tests in this readme
 
 ## Deployment
 
-### GitHub Pages
+## Deployment
+<br/>
 
-The project was deployed to GitHub Pages using the following steps...
+### Required technology
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
-3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
-4. Under "Source", click the dropdown called "None" and select "Master Branch".
-5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
+-   **Python3**: write the code and run the application
+-   **PIP**: install packages
+-   **Git**: version control
+-   **GitPod:** IDE used to create this project.
+-   **MongoDB**:  as the database to create content, add new content, and manage data
+-   **Heroku**: to deploy the project and manage the app
 
-### Forking the GitHub Repository
+### Project Creation
 
-By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+-   Use the CI [Gitpod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template).
+-   From the template on GitHub click **Use this template** and enter a short and memorable name for the new repository. Select **Create repository from template**.
+-   From this repository, click on green **Gitpod** button to open your new workspace.
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
-3. You should now have a copy of the original repository in your GitHub account.
+### Deployment to Heroku
+To deploy this project on the Heroku cloud platform:
 
-### Making a Local Clone
+#### Set up the workspace for Heroku
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. Under the repository name, click "Clone or download".
-3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-4. Open Git Bash
-5. Change the current working directory to the location where you want the cloned directory to be made.
-6. Type `git clone`, and then paste the URL you copied in Step 3.
+-   In your IDE terminal (GitPod in this case), create a requirements.txt file. This file contains all applications and dependencies required to run the app. Type this into the terminal to create the file:
 
-```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-```
+        pip3 freeze --local . requirements.txt
 
-7. Press Enter. Your local clone will be created.
+-   Next, so that Heroku knows which Python file runs the app, create a Procfile (with a capital P) by typing this command into the terminal:
 
-```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-> Cloning into `CI-Clone`...
-> remote: Counting objects: 10, done.
-> remote: Compressing objects: 100% (8/8), done.
-> remove: Total 10 (delta 1), reused 10 (delta 1)
-> Unpacking objects: 100% (10/10), done.
-```
+        echo web: python app.py > Procfile
 
-Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+
+
+#### Create the application in Heroku
+
+-   Go to the [Heroku](https://www.heroku.com/home) website and login or create an account.
+-   From your Heroku account dashboard click the **New** button and select **Create New App**
+-   Create a memorable name for your new app and select the region closest to your location (Europe).
+
+
+#### Connect your app to the GitHub repository:
+
+-   Inside the dashboard for your new app, click the Deploy tab.
+-   Select GitHub as your **Deplyment method**.
+-   When prompted, select your Github repository and click the **Connect** button.
+-   Go to the **Settings** tab of your app dashboard and select **Config Vars** > **Reveal Config Vars**.
+- Add the following information:
+
+    DEBUG:  FALSE
+
+    IP: 0.0.0.0
+
+    MONGO_URI:  (retrieved from MongDB)
+
+    PORT:  5000
+
+    SECRET_KEY: <your_secret_key>`
+
+- From the app dashboard, return to the Deploy tab and make sure tha Main branch is selected. 
+- Click  **Enable Automatic Deployment** and **Deploy Branch**.
+- Your app is now successfully deployed.
+
+
+***
+
+### Clone and run locally
+<br>
+
+- Go to the Github repository for Horror House Reviews and click the Code dropdown
+- Click Download Zip, unzip the files, and upload the files to the IDE of your choice. 
+- Upload these files to your IDE
+- In the terminal, install the requirements.txt file using:
+
+        pip3 install -r requirements.txt
+
+- Navigate to MongoDB > Create New Cluster > Create Database and create your database with collections following this [database schema](#database-structure). 
+
+- Then, create an env.py file in your IDE with this command:
+
+        touch env.py 
+
+- Add this information to the env.py file:
+
+    DEBUG:  FALSE
+
+    IP: 0.0.0.0
+
+    MONGO_URI:  (retrieved from MongDB)
+
+    PORT:  5000
+
+    SECRET_KEY: <your_secret_key>
+
+- Store the env.py file in your .gitignore file so that this sensitive information is hidden on your GitHub repository. 
+
+- You can now run the app on your IDE by running this command in your terminal: 
+
+        python3 app.py
 
 ## Credits
 
@@ -254,9 +328,4 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Acknowledgements
 
-- My mentor Aaron Sinnott, for helpful guidance.
-
-- I received inspiration for this project from my sister Sadie, who gave me great insights when developing the user persona for the Lulu Loves brand. 
-Sadie also chose the name and did some initial logo sketches which I later developed into the Lulu Loves mascot, Sunny.
-
-![Sadies original logo sketch](./documentation/sadie-sketch.jpg)
+- Thank you to the CI student support team for support through out this project.
