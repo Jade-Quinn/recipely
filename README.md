@@ -1,8 +1,8 @@
-![Lulu Loves Logo](/assets/images/lulu-loves-logo.png)
+- [Responsive view](/static/images/responsive.jpg)
 
 # Recipely
 
-[View the live project here](https://jade-quinn.github.io/lulu-loves/)
+[View the live project here](https://recipely-project.herokuapp.com/index)
 
 Inspired by modern nutritionist values, Recipely aims to be a resource for meals made with simple ingredients that are easy to prepare and big on flavor. Recipely is sure to be the key ingredient to change your approach to the kitchen!
 
@@ -24,11 +24,11 @@ Inspired by modern nutritionist values, Recipely aims to be a resource for meals
 
 **Why are we so special?**
 
-Recipely is designed with anyone who lives a fast paced life in mind. The site promotes fuss-free, flavour-packed meals by allowing users to search or share recipes in categories suxh as One Pot, Under 30 minutes or Minimal Ingredients.
+Recipely is designed with anyone who lives a fast paced life in mind. The site promotes fuss-free, flavour-packed meals by allowing users to search or share recipes.
 
 **What are the tech and design considerations?**
 
-Users are likely to view recipes while cooking or in the grocery store which suggests it will be accessed primary on mobile, with this in mind, there should be a mobile first approach to design and functionality. The target user is short on time so navigation should be intuitive and layout should quickly and clearly communicate recipie steps and ingredients.
+Users are likely view recipes while cooking or in the grocery store which suggests it will be accessed primary on mobile, with this in mind, there should be a mobile first approach to design and functionality. The target user is short on time so navigation should be intuitive and layout should quickly and clearly communicate recipie steps and ingredients.
 This product is for general consumers. As this is a B2C product, it should focus heavily on branding and emotive product images.
 
 **Project roadmap**
@@ -38,19 +38,18 @@ Each opportunity/problem is rated on a scale of 1 - 5 in two dimensions; Importa
 
 Opportunity/Problem | Importance | Feasibility
 ------------ | ------------- | -------------
-Create form(s) to allow users to add new recipes to the site, edit them and delete them | 4 | 3
-Include fields such as ingredients, preparation steps, required tools, cuisine, etc | 5 | 5
+Create form(s) to allow users to add new recipes to the site, edit them and delete them | 5 | 3
+Create form(s) to allow users to sign up / sign in | 5 | 3
+Include fields such as ingredients, preparation steps, required tools, cuisine, etc | 5 | 3
 Allow users to search recipes in specific categories | 1 | 1
-Include a section to recomend cook books | 5 | 5
-Increase social media followers | 1 | 2
-
-![Lulu Loves Project Roadmap](./documentation/project-roadmap.jpg)
+Include a section to recomend cook books | 1 | 3
+Increase social media followers | 1 | 5
 
 #### User Stories
 
 **Goals of first time visitors and returning visitors**
 
-- As a first time user, I want to browse through recipes for inspiration on what to cook.
+- As a first time user, I want to sign up and browse through recipes for inspiration on what to cook.
 - As a first time user, I want to search by category.
 - As a first time user, I want to quickly read through a list of ingredients.
 - As a returning user, I want to quickly find a recipie I have used before.
@@ -63,11 +62,6 @@ Increase social media followers | 1 | 2
 - As a site owner, I want to build a community around simple, nutritious meals.
 - As a site owner, I want to recommend cook books.
 
-#### User persona of primary visitor
-
-![Lulu Loves User Persona](./documentation/lulu-loves-user-persona.jpg)
-![Lulu Loves User Goals and Frustrations](./documentation/lulu-loves-user-persona-goals-and-frustrations.jpg)
-
 ### The Scope Plane
 
 #### Feature Scope
@@ -77,40 +71,22 @@ Each release will allow for a maximum of 12 points. The table below will be used
 
 Feature | Rating
 ------------ | -------------
-Announcement bar at the top of the home page to highlight relevant information e.g. newsletter promotion | 1
 Logo that links to the home page so users can orientate themselves easily | 1
 Clear, consistent navigation on each page | 1
-Showcase products or imporant site content with a sliding banner | 2
-Highlight aspects of the brand that are important to the user (e.g cruelty-free products, customer service) using short messages and icons | 1
-Self Care Club blog, featuring articles on products as well as general tips relating to self care | 1
-Online shop that will give users the option to set up an account or check out as guest and pay securely using Paypal, Stripe or Apple Pay | 3
-Related products section for upselling and cross selling | 3
-Calculated shipping | 3
-Advertise gift box product release | 1
-Newsletter sign-up | 2
-Footer which includes links to social media accounts | 1
-Contact form | 1
-Custom mouse icon | 1
+Showcase recipes on login | 2
 
 Given limited resources, the features that offer the most value at this stage are:
 - Logo that links to the home page
 - Clear, consistent navigation on each page
-- Showcase products with a sliding banner
-- Highlight aspects of the brand that are important to the user
-- Advertise gift box product release
-- Self Care Club blog
-- Newsletter sign-up
-- Footer
-- Contact form
-- Custom mouse icon
-
-These features solve the problem of generating interest and anticipation around the shop launch and beginning the process of establising the brand with potential customers.
+- Informative landing page to explain to the user what th site is about
+- User login and sign up
+- Allow user to add a recipe
+- Allow user to delete or edit a recipe
+- Prevent a user from being able to edit another users recipe
 
 ### The Structure Plane
 
 As the site will not have a lot of content to begin with a linear narrative will work best
-
-![Lulu Loves Information Architecture](./documentation/lulu-loves-information-architecture.png)
 
 ### The Skeleton Plane
 
@@ -128,13 +104,12 @@ The colour pallet is bright and playful but used sparingly across the site to ke
 
 **Typography**
 
-The font used on the site is Poppins with Sans Serif as the fallback font in case Poppins doesnt load.
-It is a clean and bold font but it is also slightly informal and fun to tie in with the overall brand aesthetic.
+The font used on the site is DM Sans
+It is a clean and bold font but it is also slightly informal and welcoming to tie in with the overall brand aesthetic.
 
 **Imagery**
 
-Imagery is bright and striking. It is a combination of custom made graphics and people enjoying the brands products.
-A custom mouse and hover icon offers an element of surprise.
+Imagery is bright and inviting.
 
 
 ## Features
@@ -161,48 +136,38 @@ A custom mouse and hover icon offers an element of surprise.
 
 ### Languages
 
-+ HTML5, CSS3, JavaScript, Python
+- HTML5, CSS3, JavaScript, Python
 
 ### Planning site
 
-+ [Balsamiq](https://balsamiq.com/) was used to create Wireframes.
-+ [Responsive Design Checker](https://responsivedesignchecker.com/) was used to check the site design and responsiveness on different devices.
+- [Balsamiq](https://balsamiq.com/) was used to create Wireframes.
+- [Responsive Design Checker](https://responsivedesignchecker.com/) was used to check the site design and responsiveness on different devices.
 
 ### Libraries
 
-+ [Materialize CSS and JavaScript](https://materializecss.com/getting-started.html) is used for the frontend framework to build the site's base template. Materialize JS and CSS tools were applied to speed up development. Most icons on the site are Materialize icons. I used the [Parallax template](https://materializecss.com/templates/parallax-template/preview.html)
+- [Materialize CSS and JavaScript](https://materializecss.com/getting-started.html) is used for the frontend framework to build the site's base template. Materialize JS and CSS tools were applied to speed up development. Most icons on the site are Materialize icons. I used the [Parallax template](https://materializecss.com/templates/parallax-template/preview.html)
 
-+ [FontAwesome 5.15.4](https://fontawesome.com/) is used for social links and the rating stars.
+- [FontAwesome 5.15.4](https://fontawesome.com/) is used for social links and the rating stars.
 
-+ [Google Fonts](https://fonts.google.com/) is used for most fonts on the site.
+- [Google Fonts](https://fonts.google.com/) is used for most fonts on the site.
 
-+ [Splide](https://splidejs.com/) CSS and JavaScript CDNs are used to easily add a custom slider.
+- [jQuery](https://jquery.com/) to easily manipulate the DOM and update Materialize tools that require initialization.
 
-+ [jQuery](https://jquery.com/) to easily manipulate the DOM and update Materialize tools that require initialization.
+- [Werkzeug](https://werkzeug.palletsprojects.com/en/2.0.x/#) is used to securely store passwords, salt the passwords in MongoDB, and authenticate users.
 
-+ [Regex](https://docs.python.org/3/howto/regex.html) is used with Python to set required form field conditions.
+- [PyMongo](https://pymongo.readthedocs.io/en/stable/) is used to connect/communicated between Python and MongoDB.
 
-+ [Werkzeug](https://werkzeug.palletsprojects.com/en/2.0.x/#) is used to securely store passwords, salt the passwords in MongoDB, and authenticate users.
+- [Flask](https://flask.palletsprojects.com/en/2.0.x/) is used to reduce development time when building a site with Python by constructing and rending pages.
 
-+ [PyMongo](https://pymongo.readthedocs.io/en/stable/) is used to connect/communicated between Python and MongoDB.
-
-+ [Flask](https://flask.palletsprojects.com/en/2.0.x/) is used to reduce development time when building a site with Python by constructing and rending pages.
-
-+ [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) template language is used with Flask to create custom templates and easily pull content from MongoDB using Python.
-
-### JavaScript tools 
-
-+ [EmailJS](https://www.emailjs.com/) is used to accept contact form enquires. 
-
-+ [Sweet Alert](https://sweetalert.js.org/) is used to notify the user that the form has been submitted or that there's a submission error.
+- [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) template language is used with Flask to create custom templates and easily pull content from MongoDB using Python.
 
 ### Deploying project 
 
-+ [Git](https://git-scm.com/) is used to track changes made to the repository and for version control.
-+ [GitHub](https://github.com/) is used to store the project and to share the project.
-+ [GitPod](https://www.gitpod.io/) is used with the CI base template as an IDE (integrated development environment) to develop, commit, and push files to GitHub.
-+ [MongoDB](https://www.mongodb.com/) is the noSQL database I used to store, manipulate, and retrieve data.
-+ [Heroku](https://www.heroku.com/) is used to connect with my GitHub repository, manage the project, and deploy the live application.
+- [Git](https://git-scm.com/) is used to track changes made to the repository and for version control.
+- [GitHub](https://github.com/) is used to store the project and to share the project.
+- [GitPod](https://www.gitpod.io/) is used with the CI base template as an IDE (integrated development environment) to develop, commit, and push files to GitHub.
+- [MongoDB](https://www.mongodb.com/) is the noSQL database I used to store, manipulate, and retrieve data.
+- [Heroku](https://www.heroku.com/) is used to connect with my GitHub repository, manage the project, and deploy the live application.
 
 
 ## Testing
@@ -213,9 +178,6 @@ A custom mouse and hover icon offers an element of surprise.
 Sadly I ran out of time to properly document my tests in this readme
 
 ## Deployment
-
-## Deployment
-<br/>
 
 ### Required technology
 
@@ -276,11 +238,7 @@ To deploy this project on the Heroku cloud platform:
 - Click  **Enable Automatic Deployment** and **Deploy Branch**.
 - Your app is now successfully deployed.
 
-
-***
-
 ### Clone and run locally
-<br>
 
 - Go to the Github repository for Horror House Reviews and click the Code dropdown
 - Click Download Zip, unzip the files, and upload the files to the IDE of your choice. 
@@ -322,9 +280,11 @@ To deploy this project on the Heroku cloud platform:
 - I have documented all code used in my html and css files
 
 ### Media
-- The photos in the user persona in README.md are from Pexels.com [Photo of girl 1](https://www.pexels.com/photo/photo-of-girl-smiling-while-holding-black-smartphone-4145034/) [Photo of girl 2](https://www.pexels.com/photo/fashion-man-people-woman-4144974/)
-- Banner photos used on the site are from Pexels.com
-- Articles from blog are from headspace.com 
+- The photos on the homepage are from Pexels.com
+- [Photo of food 1](https://www.pexels.com/photo/flat-lay-photography-of-vegetable-salad-on-plate-1640777/)
+- [Photo of food 2](https://www.pexels.com/photo/assorted-sliced-fruits-in-white-ceramic-bowl-1092730/)
+- [Photo of food 3](https://www.pexels.com/photo/pancake-with-honey-on-plate-357573/)
+- [Photo of food 4](https://www.pexels.com/photo/baking-cheese-cooking-crust-315755/)
 
 ### Acknowledgements
 
